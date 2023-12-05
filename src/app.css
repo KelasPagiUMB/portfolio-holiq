@@ -11,7 +11,7 @@
 
 @layer components {
     body {
-        @apply font-sans bg-gradient-to-tr from-blue-500 to-indigo-500 text-white flex justify-center items-center min-h-screen m-0;
+        @apply font-sans bg-gradient-to-br from-blue-500 to-indigo-500 text-white flex justify-center items-center min-h-screen m-0;
     }
 
     header,
@@ -40,10 +40,38 @@
     }
 
     .nav-links a {
-        @apply font-medium uppercase text-slate-200 hover:underline;
+        @apply font-medium uppercase text-slate-200;
+    }
+
+    .nav-links a:not(.active) {
+      @apply hover:underline
     }
 
     .nav-links a.active {
         @apply text-slate-50;
+    }
+
+    .container {
+      @apply flex flex-row justify-between items-center px-20 py-4;
+    }
+
+    .content{
+      @apply relative z-10 text-left w-4/6 pr-8;
+    }
+
+    .content h1 {
+      @apply mb-8 text-2xl font-bold drop-shadow-md leading-tight tracking-tight uppercase;
+    }
+
+    .content p {
+      @apply text-lg leading-tight leading-relaxed;
+    }
+
+    aside {
+      @apply relative flex items-center w-2/6;
+    }
+
+    aside svg {
+      @apply absolute;
     }
 }
