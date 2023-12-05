@@ -52,23 +52,23 @@
     }
 
     .container {
-      @apply flex flex-row justify-between items-center px-20 py-4;
+      @apply relative flex flex-col lg:flex-row justify-between items-center px-8 py-4;
     }
 
     .content{
-      @apply relative z-10 text-left w-4/6 pr-8;
+      @apply relative z-10 text-left w-full lg:w-4/6 lg:pr-8;
     }
 
     .content h1 {
-      @apply mb-8 text-2xl font-bold drop-shadow-md leading-tight tracking-tight uppercase;
+      @apply mb-6 text-2xl font-bold drop-shadow-md leading-tight tracking-tight uppercase;
     }
 
     .content p {
-      @apply text-lg leading-tight leading-relaxed;
+      @apply text-lg text-justify tracking-wide leading-relaxed;
     }
 
     aside {
-      @apply relative flex items-center w-2/6;
+      @apply absolute top-0 left-0 lg:relative flex items-center w-2/3 lg:w-2/6;
     }
 
     aside svg {
