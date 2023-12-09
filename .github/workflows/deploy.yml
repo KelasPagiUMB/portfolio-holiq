@@ -21,17 +21,4 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - uses: actions/download-artifact@v3
-        with:
-          name: builds
-          path: dist
-      - name: copy file to server
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          source: dist/*
-          target: '/home/kelaspagi/public_html/holiq'
-          rm: true
+
