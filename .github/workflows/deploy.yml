@@ -25,11 +25,11 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: builds
-          path: dist
+          path: dist/*
       - uses: actions/download-artifact@v3
         with:
           name: builds
-          path: dist
+          path: dist/*
       - name: copy file to server
         uses: appleboy/scp-action@v0.1.4
         with:
