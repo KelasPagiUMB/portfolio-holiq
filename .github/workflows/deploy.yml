@@ -40,3 +40,4 @@ jobs:
           source: dist/*
           target: '/home/kelaspagi/public_html/holiq'
           rm: true
+          strip_components: 1
