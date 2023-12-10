@@ -11,48 +11,23 @@
 
 @layer components {
     body {
-        @apply font-sans bg-gradient-to-br from-blue-500 to-indigo-500 text-white flex justify-center items-center min-h-screen m-0;
-    }
-
-    header,
-    footer {
-        @apply bg-slate-900/10 backdrop-blur-md rounded border border-white/10;
+        @apply font-sans text-white m-0 bg-gradient-to-br from-blue-500 to-indigo-500;
     }
 
     header {
-        @apply fixed top-0 left-0 text-white p-4 w-full z-50;
-    }
-
-    .navbar {
-        @apply flex justify-between items-center;
+        @apply bg-slate-900/10 backdrop-blur-md border-b border-white/10 fixed top-0 left-0 text-white p-4 md:px-12 w-full z-50;
     }
 
     .logo {
         @apply font-bold uppercase;
     }
 
-    .nav-links {
-        @apply flex items-center list-none m-0 p-0;
-    }
-
-    .nav-links li {
-        @apply mr-4;
-    }
-
-    .nav-links a {
-        @apply font-medium uppercase text-slate-200;
-    }
-
-    .nav-links a:not(.active) {
-      @apply hover:underline
-    }
-
-    .nav-links a.active {
-        @apply text-slate-50;
+    main {
+      @apply flex items-center justify-center h-screen;
     }
 
     .container {
-      @apply relative flex flex-col lg:flex-row justify-between items-center px-8 py-4;
+      @apply max-w-3xl relative flex flex-col lg:flex-row justify-between items-center px-8 py-4;
     }
 
     .content{
@@ -60,11 +35,11 @@
     }
 
     .content h1 {
-      @apply mb-6 text-2xl font-bold drop-shadow-md leading-tight tracking-tight uppercase;
+      @apply mb-4 text-3xl font-bold drop-shadow-md leading-tight tracking-tight uppercase;
     }
 
     .content p {
-      @apply text-lg text-justify tracking-wide leading-relaxed;
+      @apply text-lg md:text-xl text-justify tracking-wide leading-relaxed;
     }
 
     aside {
@@ -74,4 +49,20 @@
     aside svg {
       @apply absolute;
     }
+
+  .social {
+    @apply flex items-center justify-start md:justify-end mt-4;
+  }
+
+  .divided {
+  @apply w-16 mr-2 border;
+  }
+  
+  .social-link {
+    @apply text-slate-100 m-2 p-2 rounded border-2 border-slate-100 hover:bg-slate-100 hover:text-blue-500;
+  }
+
+  .social-link svg {
+    @apply h-4 md:h-5 w-auto;
+  }
 }
