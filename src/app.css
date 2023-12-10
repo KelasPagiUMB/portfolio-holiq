@@ -11,16 +11,16 @@
 
 @layer components {
     body {
-        @apply font-sans bg-gradient-to-br from-blue-500 to-indigo-500 text-white flex justify-center items-center min-h-screen m-0;
+        @apply font-sans text-white m-0;
     }
 
     header,
     footer {
-        @apply bg-slate-900/10 backdrop-blur-md rounded border border-white/10;
+        @apply bg-slate-900/10 backdrop-blur-md;
     }
 
     header {
-        @apply fixed top-0 left-0 text-white p-4 w-full z-50;
+        @apply fixed top-0 left-0 text-white p-4 md:px-24 w-full z-50 border-b border-white/10;
     }
 
     .navbar {
@@ -50,9 +50,11 @@
     .nav-links a.active {
         @apply text-slate-50;
     }
-
+main {
+    @apply flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-indigo-500;
+  }
     .container {
-      @apply relative flex flex-col lg:flex-row justify-between items-center px-8 py-4;
+      @apply relative flex flex-col lg:flex-row justify-between items-center px-8 py-4 max-w-4xl;
     }
 
     .content{
@@ -60,12 +62,12 @@
     }
 
     .content h1 {
-      @apply mb-6 text-2xl font-bold drop-shadow-md leading-tight tracking-tight uppercase;
+      @apply mb-4 text-3xl font-bold drop-shadow-md leading-tight tracking-tight uppercase;
     }
-
-    .content p {
-      @apply text-lg text-justify tracking-wide leading-relaxed;
-    }
+    
+    .content quote {
+    @apply text-xl text-slate-100 italic border-l-2 pl-1;
+  }
 
     aside {
       @apply absolute top-0 left-0 lg:relative flex items-center w-2/3 lg:w-2/6;
@@ -74,4 +76,20 @@
     aside svg {
       @apply absolute;
     }
+
+  #about {
+    @apply relative min-h-screen bg-gradient-to-tr from-blue-500 to-indigo-500 flex items-center justify-center px-4;
+  }
+  
+  #about h1 {
+    @apply text-center;
+  }
+
+  #about p {
+    @apply text-lg text-center tracking-wide leading-relaxed;
+  }
+
+  footer {
+    @apply fixed bottom-0 left-0 text-white py-3 text-center w-full z-50 border-t border-white/10;
+  }
 }
