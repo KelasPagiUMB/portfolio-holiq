@@ -38,6 +38,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: dist/*
-          target: '/home/kelaspagi/public_html/holiq'
+          target: '/home/kelaspagi/public_html/subdomain/holiq'
           rm: true
           strip_components: 1
