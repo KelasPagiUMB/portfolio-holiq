@@ -1,26 +1,329 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holiq - Web Dev</title>
-    <meta name="title" content="Holiq - Web Dev" />
-    <meta name="description" content="Hello 👋, I'm Holiq and I'm a Web Developer" />
+<!DOCTYPE html>
+<html lang="en">
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Holiq - Web Dev" />
-    <meta property="og:description" content="Hello 👋, I'm Holiq and I'm a Web Developer" />
-    <meta property="og:image" content="./banner.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiq</title>
+    <link rel="stylesheet" href="./dist/aos/aos.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+</head>
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Holiq - Web Dev" />
+<body>
+    <i class="bx bx-align-right mobile-nav-toggle d-lg-none"></i>
 
-    <meta property="twitter:description" content="Hello 👋, I'm Holiq and I'm a Web Developer" />
-    <meta property="twitter:image" content="/banner.png" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <header id="header" class="d-flex flex-column justify-content-center">
+        <nav id="navbar" class="navbar nav-menu">
+            <ul>
+                <li>
+                    <a href="#hero" class="nav-link scrollto active">
+                        <i class="bx bx-home"></i> <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link scrollto">
+                        <i class="bx bx-user"></i> <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume" class="nav-link scrollto">
+                        <i class="bx bx-file-blank"></i> <span>Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link scrollto">
+                        <i class="bx bx-book-content"></i> <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#timeline" class="nav-link scrollto">
+                        <i class="bx bx-calendar"></i> <span>Timeline</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="d-flex flex-column justify-content-center">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Holiq Ibrahim</h1>
+            <p>Web <span>Developer</span></p>
+            <div class="social-links">
+                <div class="divided"></div>
+                <a href="mailto:holiq.ibrahim376@gmail.com"><i class="bx bxl-gmail"></i></a>
+                <a href="https://github.com/holiq"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/holiq-ibrahim/"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>About</h2>
+                    <p>I am a passionate web developer with expertise in Laravel and Tailwind CSS. With a passion to
+                        explore new technologies, I am constantly looking for opportunities to expand my knowledge and
+                        expertise in the field of web development. I have adaptability to new environments, enabling me
+                        to integrate quickly into diverse teams and projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Experiences</h3>
+                        <div class="resume-item">
+                            <h4>Maintainer</h4>
+                            <h5>KoalaFacade</h5>
+                            <p>2022/11 - Present | Palu, Indonesia</p>
+                            <p>KoalaFacade crafts web, boilerplate and package in the
+                                laravel ecosystem.</p>
+                            <ul>
+                                <li>Review and merge code changes from contributors, ensuring they align with project
+                                    standards.
+                                </li>
+                                <li>Fix issues and ensure the continuous operation of these packages by regularly
+                                    updating them.</li>
+                                <li>Maintain and improve project documentation, providing clear explanations and
+                                    examples.</li>
+                                <li>Collaborate with other maintainers and contributors to implement new features and
+                                    resolve issues.</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Web Developer</h4>
+                            <h5>Seccodeid</h5>
+                            <p>2020/04 - Present | Yogyakarta, Indonesia</p>
+                            <p>Seccodeid is a free discussion forum platform from Indonesia, which discusses computer
+                                technology, programming, hacking, and various other information.</p>
+                            <ul>
+                                <li>Create and maintain the Seccodeid forum using the Laravel framework and Bootstra.
+                                </li>
+                                <li>Maintenance tasks, including database backups, software updates, and bug fixes, to
+                                    ensure the smooth operation of the forum.</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Backend Developer</h4>
+                            <h5>Ekskul.co.id</h5>
+                            <p>2021/04 - 2022/11 | Tangerang, Indonesia</p>
+                            <p>Ekskul.co.id is an e-learning platform in Indonesia.</p>
+                            <ul>
+                                <li>Create the backend infrastructure using Laravel framework for an e-learning
+                                    platform.</li>
+                                <li>Integartion payment gateway for course ordering system and handle payments using
+                                    Midtrans.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Information Engineering</h4>
+                            <h5>University of Muhammadiyah Banten</h5>
+                            <p>2022/09 - Present | Tangerang, Indonesia</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Computer and Network Engineering</h4>
+                            <h5>SMK Miftahul Jannah Cikupa</h5>
+                            <p>2020/07 - 2022/06 | Tangerang, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-cli">CLI</li>
+                            <li data-filter=".filter-web">Web</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-cli">
+                        <div class="portfolio-wrap">
+                            <img src="./dist/img/banner-diamond.png" class="img-fluid rounded-2 w-100" alt="">
+                            <div class="portfolio-info">
+                                <h4>Diamond Console</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="./dist/img/banner-diamond.png" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                                    <a href="https://github.com/KoalaFacade/diamond-console"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="./dist/img/warehouse.png" class="img-fluid rounded-2 w-100" alt="">
+                            <div class="portfolio-info">
+                                <h4>Warehouse Management System</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="./dist/img/warehouse.png" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                                    <a href="https://github.com/holiq/Warehouse"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Timeline</h2>
+                </div>
+
+                <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <ul id="timeline-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-q1">Quartal 1</li>
+                        <li data-filter=".filter-q2">Quartal 2</li>
+                        <li data-filter=".filter-q3">Quartal 3</li>
+                        <li data-filter=".filter-q4">Quartal 4</li>
+                    </ul>
+                </div>
+
+                <div class="row timeline-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-6 col-md-6 timeline-item filter-q1">
+                        <div class="timeline">
+                            <div class="resume" id="resume">
+                                <h3 class="resume-title">Q1 2023</h3>
+                                <div class="resume-item">
+                                    <h4>January</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>Febuary</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>March</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 timeline-item filter-q2">
+                        <div class="timeline">
+                            <div class="resume" id="resume">
+                                <h3 class="resume-title">Q2 2023</h3>
+                                <div class="resume-item">
+                                    <h4>April</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>May</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>June</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 timeline-item filter-q3">
+                        <div class="timeline">
+                            <div class="resume" id="resume">
+                                <h3 class="resume-title">Q3 2023</h3>
+                                <div class="resume-item">
+                                    <h4>July</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>August</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>September</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 timeline-item filter-q4">
+                        <div class="timeline">
+                            <div class="resume" id="resume">
+                                <h3 class="resume-title">Q4 2023</h3>
+                                <div class="resume-item">
+                                    <h4>October</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>November</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>December</h4>
+                                    <ul>
+                                        <li>Review</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bx bx-arrow-from-bottom"></i>
+    </a>
+
+    <script src="./dist/aos/aos.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+</body>
+
 </html>
