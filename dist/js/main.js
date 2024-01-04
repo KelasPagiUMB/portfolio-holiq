@@ -178,29 +178,29 @@
    * timeline isotope and filter
    */
   window.addEventListener('load', () => {
-    let timelineContainer = select('.timeline-container');
-    if (timelineContainer) {
-      let timelineIsotope = new Isotope(timelineContainer, {
-        itemSelector: '.timeline-item'
-      });
+    const filters = document.querySelectorAll('#timeline-filters li');
+    const timelineContainer = document.querySelector('.timeline-container');
 
-      let timelineFilters = select('#timeline-flters li', true);
+    filters.forEach(function (filter) {
+      filter.addEventListener('click', function () {
+        const selectedFilter = this.getAttribute('data-filter');
+        const timelineItems = document.querySelectorAll('.timeline-item');
 
-      on('click', '#timeline-flters li', function (e) {
-        e.preventDefault();
-        timelineFilters.forEach(function (el) {
-          el.classList.remove('filter-active');
+        filters.forEach(function (item) {
+          item.classList.remove('filter-active');
         });
+
         this.classList.add('filter-active');
 
-        timelineIsotope.arrange({
-          filter: this.getAttribute('data-filter')
+        timelineItems.forEach(function (item) {
+          if (selectedFilter === '*' || item.classList.contains(selectedFilter.substring(1))) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
         });
-        timelineIsotope.on('arrangeComplete', function () {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
+      });
+    });
   });
+
 })()
