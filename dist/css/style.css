@@ -258,7 +258,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: var(--dark);
+  color: var(--dark-600);
 }
 
 .mobile-nav-active {
@@ -482,24 +482,6 @@ section {
   top: 0;
   background: var(--white);
   border: 2px solid var(--blue);
-}
-
-.resume img {
-  position: absolute;
-  right: 0;
-  top: 100px;
-  z-index: 0;
-  width: 30%;
-  height: auto;
-}
-
-@media (min-width: 992px) {
-  .resume img {
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    width: 200px;
-  }
 }
 
 /*--------------------------------------------------------------
