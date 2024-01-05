@@ -179,7 +179,6 @@
    */
   window.addEventListener('load', () => {
     const filters = document.querySelectorAll('#timeline-filters li');
-    const timelineContainer = document.querySelector('.timeline-container');
 
     filters.forEach(function (filter) {
       filter.addEventListener('click', function () {
